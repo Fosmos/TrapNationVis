@@ -5,14 +5,14 @@ playerName=GPDMP
 playerPlugin=GPMDP
 playerVal=4
 playerEXE=C:\Users\erme2\AppData\Local\GPMDP_3\app-4.7.1\Google Play Music Desktop Player.exe
-playerState=2
+playerState=1
 
 ;--BASIC--
 ; Bands: Amount of data points that get visualized (CPU intensive!)
 ; Height: Height/Width of the outer visualization
 ; Radius: Radius of the inner circle
 Bands=150
-Height=100
+Height=110
 Radius=120
 Smoothing=3
 Mirror=1
@@ -25,10 +25,10 @@ HollowCenter=0
 ; ImageAudioReactIntensity: The intensity of the reaction to audio
 ; ImageAlpha: The transparency of the image (255 = 100%)
 ; ImageTint: The tint of the image (default: none)
-ImageName=trapnation.png
+ImageName=gpmdp.png
 ImageXScale=0.6
 ImageYScale=0.6
-ImageAudioReactIntensity=0.3
+ImageAudioReactIntensity=0.2
 ImageAlpha=255
 ImageTint=
 ImageTint2=[MeasureCoverColorBackground1]
@@ -46,8 +46,8 @@ FFTBufferSize=16384
 FFTAttack=0
 FFTDecay=0
 FreqMin=20
-FreqMax=150
-Sensitivity=40
+FreqMax=250
+Sensitivity=30
 
 ; --WORK IN PROGRESS--
 ; If you want to scale it, please use "Radius" and "Height"
@@ -60,6 +60,9 @@ Config=TrapNationVis
 Channel=
 Port=
 ID=
+Layers=1
+DelayPerLayer=10
+
 
 ; --Color/Layer Settings--
 ; Layers: Amount of color layers (recommended 3-5, but there is no limit) (CPU intensive!)

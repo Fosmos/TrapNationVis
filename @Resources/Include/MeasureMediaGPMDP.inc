@@ -2,7 +2,6 @@
 Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=State
-UpdateDivider=2
 
 [MeasureStateButton]
 Measure=Plugin

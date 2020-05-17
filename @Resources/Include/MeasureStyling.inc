@@ -40,7 +40,7 @@ UpdateDivider=1
 Measure=Plugin
 Plugin=Chameleon
 Parent=MeasureGetCoverColor
-Format=Dec
+Format=Hex
 Color=Foreground2
 UpdateDivider=1
 
@@ -57,5 +57,5 @@ Measure=Plugin
 Plugin=Chameleon
 Parent=MeasureGetCoverColor
 Format=Dec
-Color=Light3
+Color=Foreground1
 UpdateDivider=1
