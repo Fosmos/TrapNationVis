@@ -7,7 +7,7 @@ A modified verion of SnGmng's visualizer which can be found here: https://www.de
 * Added Media player support
   - Spotify (Sadly no album cover support ... yet)
     - Recommended to use the .exe version instead of the store app
-    - You can follow this link to get Spotify Album covers working : https://github.com/marcopixel/Monstercat-Visualizer/wiki/WebNowPlaying-Spotify
+    - You can follow this link to get Spotify Album covers working : https://github.com/marcopixel/Monstercat-Visualizer/wiki/WebNowPlaying-Spotify | Once you've finished that Right-Click the Spotify option in the MediaPlayer dialog
   - Google Play Music Desktop Player (Full Support)
   - iTunes (Full support)
   - Windows Media Player (aka WMP) (Full Suport)
