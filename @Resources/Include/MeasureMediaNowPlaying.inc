@@ -51,6 +51,5 @@ UpdateDivider=100
 Measure=NowPlaying
 PlayerName=[MeasurePlayer]
 IfCondition=(MeasureState = 2)
-IfTrueAction=[!HideFadeGroup "SongInfo"][!DeactivateConfig "TrapNationVis"]
-IfFalseAction=[!ShowFadeGroup "SongInfo"][!ActivateConfig "TrapNationVis"]
-UpdateDivider=20
+IfTrueAction=[!HideFade][!DeactivateConfig "TrapNationVis"]
+IfFalseAction=[!ShowFade][!ActivateConfig "TrapNationVis"]

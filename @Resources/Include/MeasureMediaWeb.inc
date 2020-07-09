@@ -26,7 +26,6 @@ UpdateDivider=20
 Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=Cover
-DefaultPath=#@#images\nocover.png
 CoverPath=#@#images\coverWeb.png
 Substitute="":"#@#images\trapnation.png"
 UpdateDivider=20
@@ -40,6 +39,6 @@ UpdateDivider=20
 [MeasureAutoHide]
 Measure=Plugin
 Plugin=WebNowPlaying
-IfCondition=(MeasureState = 2 && MeasureProgress > 0) || (MeasureState = 0)
-IfTrueAction=[!HideFadeGroup "SongInfo"][!DeactivateConfig "TrapNationVis"]
-IfFalseAction=[!ShowFadeGroup "SongInfo"][!ActivateConfig "TrapNationVis"]
+IfCondition=(MeasureState = 2 && MeasureProgress > 0)
+IfTrueAction=[!HideFade][!DeactivateConfig "TrapNationVis"]
+IfFalseAction=[!ShowFade][!ActivateConfig "TrapNationVis"]

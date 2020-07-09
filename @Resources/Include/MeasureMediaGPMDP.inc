@@ -14,6 +14,7 @@ Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=Cover
 CoverPath=#@#images\coverGPMDP.png
+Substitute="":"#@#images\gpmdp.png"
 UpdateDivider=100
 
 [MeasureArtist]
@@ -67,16 +68,16 @@ PlayerInfo=Status
 [MeasureAutoHide]
 Measure=calc
 IfCondition=(MeasureState = 2 && MeasureProgress > 0)
-IfTrueAction=!HideFade
-IfFalseAction=!ShowFade
+IfTrueAction=[!HideFade][!DeactivateConfig "TrapNationVis"]
+IfFalseAction=[!ShowFade][!ActivateConfig "TrapNationVis"]
 
-[MeasureAdaptiveHide]
-Measure=Plugin
-Plugin=GPMDPPlugin
-PlayerInfo=Status
-ifBelowValue=1
-ifBelowAction=!HideFade
-ifAboveValue=0
-ifAboveAction=!ShowFade
-UpdateDivider=10
+; [MeasureAutoHideGPMDP]
+; Measure=Plugin
+; Plugin=GPMDPPlugin
+; PlayerInfo=Status
+; IfEqualValue=0
+; IfEqualAction=[!HideFade][!DeactivateConfig "TrapNationVis"]
+; IfAboveValue=0
+; IfAboveAction=[!ShowFade][!ActivateConfig "TrapNationVis"]
+; UpdateDivider=100
 
