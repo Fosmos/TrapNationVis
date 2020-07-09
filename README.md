@@ -6,6 +6,7 @@ A modified verion of SnGmng's visualizer which can be found here: https://www.de
 ## What's different?
 * Added Media player support
   - Spotify (Sadly no album cover support ... yet)
+    - Recommended to use the .exe version instead of the store app
   - Google Play Music Desktop Player (Full Support)
   - iTunes (Full support)
   - Windows Media Player (aka WMP) (Full Suport)
