@@ -1,7 +1,7 @@
 # TrapNationVis
 A modified verion of SnGmng's visualizer which can be found here: https://www.deviantart.com/sngmng/art/TrapNation-Visualizer-v1-1-1-792869094
 
-![](https://i.ibb.co/4pqRfgc/vis.png)
+![](https://i.ibb.co/xmhxQYq/vis.gif)
 
 ## What's different?
 * Added Media player support
