@@ -27,9 +27,25 @@ UpdateDivider=100
 Measure=NowPlaying
 PlayerName=[MeasurePlayer]
 PlayerType=Title
+RegExpSubstitute=1
+Substitute="^(?siU)^(.+) ((-|\/|(\(|\[).*()).+)+$":"\1"
+UpdateDivider=100
+
+[MeasureTrackFull]
+Measure=NowPlaying
+PlayerName=[MeasurePlayer]
+PlayerType=Title
 UpdateDivider=100
 
 [MeasureArtist]
+Measure=NowPlaying
+PlayerName=[MeasurePlayer]
+PlayerType=Artist
+RegExpSubstitute=1
+Substitute="^(?siU)^(.+)((,| -| & (?!\bcountry\b|\bfree\b)| feat.| and| :| \/).+)+$":"\1"
+UpdateDivider=100
+
+[MeasureArtistFull]
 Measure=NowPlaying
 PlayerName=[MeasurePlayer]
 PlayerType=Artist
@@ -45,11 +61,9 @@ UpdateDivider=100
 Measure=NowPlaying
 PlayerName=[MeasurePlayer]
 PlayerType=Progress
-UpdateDivider=100
 
 [MeasureAutoHide]
-Measure=NowPlaying
-PlayerName=[MeasurePlayer]
+Measure=calc
 IfCondition=(MeasureState = 2)
-IfTrueAction=[!HideFade][!DeactivateConfig "TrapNationVis"]
-IfFalseAction=[!ShowFade][!ActivateConfig "TrapNationVis"]
+IfTrueAction=!HideFade
+IfFalseAction=!ShowFade
